@@ -1,0 +1,22 @@
+name: genai-nursing
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - umap-learn
+  - hdbscan
+  - gensim
+  - sentence-transformers
+  - bertopic
+  - nltk
+  - openai
+  - jupyter
+  - pip
+  - pip:
+      - wordcloud
