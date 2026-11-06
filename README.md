@@ -18,11 +18,11 @@ The first notebook runs BERTopic and saves the topic-level results. The second u
 
 ## Setup
 
-Clone the release repository from the CCT Lab GitHub ( I need to replace the placeholder with the final repository name):
+Clone the release repository from the CCT Lab GitHub:
 
 ```bash
-git clone https://github.com/cctlab-research/<REPOSITORY-NAME>.git
-cd <REPOSITORY-NAME>
+git clone https://github.com/cctlab-research/bertopic-aura-workflow.git
+cd bertopic-aura-workflow
 ```
 
 Create and activate the Conda environment:
