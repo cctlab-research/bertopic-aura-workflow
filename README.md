@@ -1,8 +1,6 @@
 # BERTopic Theme Alignment: AURA Workflow
 
-This repository contains the code used for BERTopic modeling and the comparison of machine-generated topics with human-coded themes in our nursing interview study. The approach is described in the published AURA paper below.
-
-The interview data and human usefulness rating materials are not included in this repository.
+This repository contains the Python code for BERTopic modeling and computational theme alignment used in the AURA study. The interview data and human usefulness rating materials are not included in this repository.
 
 ## Repository files
 
