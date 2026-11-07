@@ -12,7 +12,6 @@ notebooks/
     model_2_gateA-Copy1.ipynb
 README.md
 environment.yml
-.gitignore
 LICENSE
 ```
 
@@ -73,4 +72,4 @@ Tong, C., Eyinla, T., & Bautista, J. R. (2026). Comparing BERTopic outputs with 
 
 ## License
 
-This repository is licensed under the MIT License - see the [License](LICENSE) file for details.
+This code is licensed under the MIT License - see the [License](LICENSE) file for details.
