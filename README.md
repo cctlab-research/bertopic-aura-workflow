@@ -18,11 +18,11 @@ The first notebook runs BERTopic and saves the topic-level results. The second u
 
 ## Setup
 
-Clone the release repository from the CCT Lab GitHub ( I need to replace the placeholder with the final repository name):
+Clone the release repository from the CCT Lab GitHub:
 
 ```bash
-git clone https://github.com/cctlab-research/<REPOSITORY-NAME>.git
-cd <REPOSITORY-NAME>
+git clone https://github.com/cctlab-research/bertopic-aura-workflow.git
+cd bertopic-aura-workflow
 ```
 
 Create and activate the Conda environment:
@@ -45,9 +45,9 @@ Create a `data/` folder in the repository directory and place the following CSV 
 | `human_sentences.csv` | `doc_id`, `lvl1`, `lvl2`, `sentence_text` | Human-coded sentences with document identifiers and theme labels |
 | `theme_list.csv` | `lvl1`, `lvl2`, `include_ge_30` | Human-coded theme list and the indicator used to select themes for the analysis |
 
-Each row in the three `processed_*.csv` files should contain a speaker identifier and its associated interview text. In `human_sentences.csv`, `doc_id` must follow the document-naming format expected by the alignment notebook so that it can match sentences to speakers. The `lvl1` and `lvl2` labels must agree across the two human-coding files. `include_ge_30` identifies the themes retained for alignment.
+Each row in the three `processed_*.csv` files should contain a speaker identifier and its associated interview text. In `human_sentences.csv`, `doc_id` must follow the document-naming format expected by the alignment notebook so that it can match sentences to speakers. The `lvl1` and `lvl2` columns are used to match the human-coded sentences with the theme list. Only themes marked `include_ge_30` are retained for alignment.
 
-Create an `Outputs/` folder beside `data/` before running the notebooks. This is where the code saves its generated files. Neither `data/` nor `Outputs/` is included in the code release.
+Create an `Outputs/` folder before running the notebooks. This is where the code saves its generated files. Neither `data/` nor `Outputs/` is included in the code release.
 
 ## Running the notebooks
 
@@ -58,14 +58,12 @@ Run the notebooks in this order:
 
 The second notebook reads `topic_assignment.csv`, `semantic_chunks_docids.csv`, `topic_top_words.csv`, and `topic_centroids.csv` from `Outputs/`, so the first notebook must be run before it.
 
-The BERTopic notebook also contains an OpenAI-based topic-labeling step. If you use it, supply your own API key through a secure local configuration rather than storing it in the notebook. .
+The BERTopic notebook also contains an OpenAI-based topic-labeling step. If you use it, you can supply your own API key.
 
 
 ## Publication
 
-Tong, C., Eyinla, T., & Bautista, J. R. (2026). Comparing BERTopic outputs with human-coded themes: The Alignment and Usefulness Rating Audit (AURA) workflow for qualitative analysis. *International Journal of Qualitative Methods*.
-
-DOI: https://doi.org/10.1177/16094069261486252
+Tong, C., Eyinla, T., & Bautista, J. R. (2026). Comparing BERTopic outputs with human-coded themes: The Alignment and Usefulness Rating Audit (AURA) workflow for qualitative analysis. *International Journal of Qualitative Methods*. DOI: https://doi.org/10.1177/16094069261486252
 
 ## License
 
