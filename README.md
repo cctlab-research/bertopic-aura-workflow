@@ -2,7 +2,7 @@
 
 This repository contains the code used for BERTopic modeling and the comparison of machine-generated topics with human-coded themes in our nursing interview study. The approach is described in the published AURA paper below.
 
-The interview transcripts and human-coded data are not included in this repository.
+The interview data and human usefulness rating materials are not included in this repository.
 
 ## Repository files
 
@@ -12,6 +12,8 @@ notebooks/
     model_2_gateA-Copy1.ipynb
 README.md
 environment.yml
+.gitignore
+LICENSE
 ```
 
 The first notebook runs BERTopic and saves the topic-level results. The second uses those results to compare the topics with human-coded themes. `environment.yml` lists the packages needed to run the notebooks.
@@ -61,10 +63,14 @@ The second notebook reads `topic_assignment.csv`, `semantic_chunks_docids.csv`, 
 The BERTopic notebook also contains an OpenAI-based topic-labeling step. If you use it, you can supply your own API key.
 
 
-## Publication
+## Code Contributions
 
-Tong, C., Eyinla, T., & Bautista, J. R. (2026). Comparing BERTopic outputs with human-coded themes: The Alignment and Usefulness Rating Audit (AURA) workflow for qualitative analysis. *International Journal of Qualitative Methods*. DOI: https://doi.org/10.1177/16094069261486252
+This code was developed by Temitope Eyinla as part of the CCT Lab research project led by Dr. Chau Tong.
+
+## Please Cite
+
+Tong, C., Eyinla, T., & Bautista, J. R. (2026). Comparing BERTopic outputs with human-coded themes: The Alignment and Usefulness Rating Audit (AURA) workflow for qualitative analysis. *International Journal of Qualitative Methods*. https://doi.org/10.1177/16094069261486252
 
 ## License
 
-MIT License is proposed for the code, pending approval by the authors. A license file will be added after approval.
+This repository is licensed under the MIT License - see the [License](LICENSE) file for details.
